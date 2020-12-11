@@ -1,0 +1,36 @@
+{
+	"text":"1",
+	"dl":[
+		{
+			"textname":"度朗",
+			"top":[
+				{
+				"textTop":"DURON 度朗 CLASSIC 20W-50",
+				"textCont":"可用于一些小型车辆中的柴油发动机， 包括需要此粘度等级和 CH-4、CG-4  或更早规格的轿车和轻型卡车。"
+				}
+			],
+			"parameter":{
+				"name":"加拿大",
+				"series":"杜郎",
+				"type":"-",
+				"viscosity":"20W-50",
+				"Grade":"API:CH-4",
+				"capacity":"4L装",
+				"adaptation":"柴油发动机"
+			},
+			"advantage":{
+			
+			},
+			"exhibition":[
+			{
+				"title":"正面",
+				"imgUrl":"../../../ecar/images/details/dl_zm.png"
+			},
+			{
+				"title":"背面",
+				"imgUrl":"../../../ecar/images/details/dl_bm.png"
+			}
+			]
+		}
+	]
+}
