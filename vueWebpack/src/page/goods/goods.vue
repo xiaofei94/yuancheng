@@ -26,7 +26,7 @@
 		<Scroller class="">
 			<div v-for="(shoplists, index) in shoplist" class="mar_bot">
 				<div class="dis_flex_left text_left bg_ff pad_20 bor_bot ft_cor_red">
-					<div @click="checked1(shoplists)" class="dis_flex_left" style="width: 20px;height:60px;margin-right: 10px;">
+					<div @click="checked1(shoplists)" class="dis_flex_left" style="width: 20px;height:20px;margin-right: 10px;">
 						<img v-if="!shoplists.show" class="" style="" src="../../assets/radius@2x.png"/>
 						<img v-if="shoplists.show" class="" style="" src="../../assets/radius_checked@2x.png"/>
 					</div>

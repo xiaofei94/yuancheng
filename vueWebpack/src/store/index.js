@@ -25,6 +25,9 @@ export default new Vuex.Store({
         modifyAName: ({ commit }, name) => {
             return commit('modifyAName', name)
         },
+        addgoodslist:({ commit }, item) => {
+        	commit('addgoodslist', item)
+        },
         async getDefaultCar({ commit }, ) {
 
         }
@@ -45,6 +48,9 @@ export default new Vuex.Store({
         },
         goodslist(state, goodslist){
         	state.goodslist=goodslist
+        },
+        addgoodslist(state, list){
+        	state.goodslist.push(list)
         }
     },
     getters: {

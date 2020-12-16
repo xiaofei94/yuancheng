@@ -15,11 +15,16 @@
 <script>
 	import Header from "../../components/header"
 	import Scroller from "../../components/Bscroll"
+	import { mapState } from "vuex"
 	export default {
 		data(){
 			return{
-				list:[]
+				list:[],
+				addlist:false
 			}
+		},
+		computed:{
+			...mapState(['goodslist'])
 		},
 		created(){
 			this.list = this.$store.state.shoplist
@@ -30,7 +35,30 @@
 		},
 		methods:{
 			addcars(){
-				this.$store.commit("goodslist", this.list)
+				let goodslist = this.$store.state.goodslist
+				console.log(goodslist.length)
+				for(let item of goodslist){
+					if(this.list.shopId=item.shopId){
+						console.log(item.shopId)
+						this.addlist=false
+						
+//						break
+					}else{
+//						this.$store.commit("addgoodslist", this.list)
+						this.addlist=true
+//						break
+						console.log("11")
+					}
+				}
+//				goodslist.forEach( item => {
+					if(this.addlist){
+						this.$store.commit("addgoodslist", this.list)
+					}else{
+						console.log("已经有了")
+					}
+						
+//				})
+				console.log(goodslist)
 	console.log(this.list)
 			}
 		}
